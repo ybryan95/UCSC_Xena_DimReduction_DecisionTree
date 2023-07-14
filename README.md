@@ -1,4 +1,4 @@
-![TCGA-GBM Data Analysis](logo.png)
+![image](https://github.com/ybryan95/UCSC_Xena_Dimensionality_Reduction_Demo/assets/123009743/a5a09993-63e0-4331-845e-35ab276cb7bb)
 
 # TCGA-GBM Data Analysis
 This project involves the analysis of TCGA-GBM (Glioblastoma multiforme) data using decision tree models to classify patient outcomes based on various demographic and treatment features. The scripts provided are written in R.
