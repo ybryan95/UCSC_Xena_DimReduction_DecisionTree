@@ -10,8 +10,6 @@ This project involves the analysis of TCGA-GBM (Glioblastoma multiforme) data us
 - [2. Understanding the Code](#2-understanding-the-code)
     - [2.1 PCA](#21-pca)
     - [2.2 NMF](#22-nmf)
-- [3. Contributing](#3-contributing)
-- [4. License](#4-license)
 
 # 1. Getting started
 ## 1.1 Data Sources
