@@ -29,8 +29,36 @@ PCA (Principal Component Analysis) is used to reduce the dimensionality of the d
 ## 2.2 NMF
 NMF (Non-negative Matrix Factorization) is another dimensionality reduction technique, which has the characteristic that it only allows non-negative elements in the lower rank matrix representation of the original data. This can make the resulting components easier to interpret in some cases, as they can be understood as additive parts of the original elements.
 
-# 3. Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+# Patient Survival Prediction Using TCGA-GBM Data
 
-# 4. License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This repository contains a decision tree model that predicts patient survival using TCGA-GBM data from UCSC Xena. The model focuses on key features such as age at diagnosis, performance scores, and therapy outcomes.
+
+## Decision Tree Data Preparation
+
+The data is first loaded and relevant features are selected. These features include age at initial pathologic diagnosis, karnofsky performance score, performance status scale timing, primary therapy outcome success, radiation therapy, and tissue source site. The label is days to death.
+
+Any rows with missing data are removed. The label is then converted to a binary classification problem, with a threshold of 365 days set to distinguish between "survived" and "did not survive".
+
+The data is then split into training and testing sets, with 67% of the data used for training.
+
+## Model Training
+
+The decision tree model is trained using the `rpart` package in R. The model is then visualized using the `rpart.plot` package.
+
+## Model Evaluation
+
+Predictions are made on both the test set and the training set. Confusion matrices are computed for both sets to evaluate the performance of the model.
+
+## Usage
+
+To use this code, simply clone the repository and run the R script. Make sure to adjust the directory path to match your local environment.
+
+## Dependencies
+
+This code requires the following R packages:
+
+- rpart
+- rpart.plot
+
+These can be installed using the `install.packages()` function in R.
+
